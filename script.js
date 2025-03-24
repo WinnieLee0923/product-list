@@ -194,6 +194,13 @@ function makeCartDraggable() {
     document.addEventListener("mouseup", () => {
         isDragging = false;
     });
+
+    
+    // 監聽捲動事件，更新購物車位置
+    window.addEventListener("scroll", () => {
+        const scrollTop = window.scrollY;
+        cartModal.style.top = (10 + scrollTop) + "px";
+    });
 }
 
 // 開啟購物車
