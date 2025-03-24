@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(response => response.json())
         .then(data => {
             categorizeAndPopulateGrid(data.traderJoes, view);
-            categorizeAndPopulateGrid(data.costco, view); // 將 Costco 商品也進行分類
+            populateGrid("costcoGrid", data.costco, view);
         });
 
     // 點擊模態框關閉
@@ -29,7 +29,6 @@ function categorizeAndPopulateGrid(products, view) {
     const skincare = [];
     const household = [];
     const spices = [];
-    const healthSupplements = []; // 新增保健食品分類
 
     products.forEach(product => {
         if (product.name.includes("咖啡") || product.name.includes("茶") ||
@@ -42,8 +41,6 @@ function categorizeAndPopulateGrid(products, view) {
             skincare.push(product);
         } else if (product.name.includes("香料")) {
             spices.push(product);
-        } else if (product.name.includes("保健食品") || product.name.includes("維生素") || product.name.includes("補充劑")) { // 根據商品名稱包含的關鍵詞分類為保健食品
-            healthSupplements.push(product);
         } else {
             household.push(product);
         }
@@ -54,7 +51,6 @@ function categorizeAndPopulateGrid(products, view) {
     populateGrid("skincareGrid", skincare, view);
     populateGrid("householdGrid", household, view);
     populateGrid("spicesGrid", spices, view);
-    populateGrid("healthSupplementsGrid", healthSupplements, view); // 填充保健食品網格
 }
 
 // 填充商品網格
@@ -199,6 +195,7 @@ function makeCartDraggable() {
         isDragging = false;
     });
 
+    
     // 監聽捲動事件，更新購物車位置
     window.addEventListener("scroll", () => {
         const scrollTop = window.scrollY;
