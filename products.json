@@ -220,21 +220,21 @@
   ],
   "costco": [
     {
-      "name": "L'il Critters Omega-3 DHA 魚油軟糖 220顆",
+      "name": "Lil Critters Omega-3 DHA 魚油軟糖 220顆",
       "price": 13.99,
       "salePrice": 630,
       "tax": 1.1,
       "image": "https://raw.githubusercontent.com/WinnieLee0923/product-list/refs/heads/main/Images/image6.jpg"
     },
     {
-      "name": "L'il Critters 美國銷售第ㄧ小熊軟綜合糖維他命",
+      "name": "Lil Critters 美國銷售第ㄧ小熊軟綜合糖維他命",
       "price": 12.49,
       "salePrice": 600,
       "tax": 1.1,
       "image": "https://raw.githubusercontent.com/WinnieLee0923/product-list/refs/heads/main/Images/image7.jpg"
     },
     {
-      "name": "L'il Critters 小熊軟糖維生素C+鋅+D 290顆",
+      "name": "Lil Critters 小熊軟糖維生素C+鋅+D 290顆",
       "price": 12.49,
       "salePrice": 630,
       "tax": 1.1,
