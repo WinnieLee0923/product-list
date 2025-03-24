@@ -159,8 +159,8 @@ body {
     }*/
 
 #cartItems {
-    margin: 20px 0;
-    height: 300px; /* 設定顯示商品區域的高度 */
+   /* margin: 20px 0;
+    height: 300px; */ /* 設定顯示商品區域的高度 */
     overflow-y: auto; /* 讓這部分內容超過時可滾動 */
 }
 
