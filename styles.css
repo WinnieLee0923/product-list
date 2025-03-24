@@ -161,6 +161,7 @@ body {
 #cartItems {
    /* margin: 20px 0;
     height: 300px; */ /* 設定顯示商品區域的高度 */
+    max-height: 600px;
     overflow-y: auto; /* 讓這部分內容超過時可滾動 */
 }
 
