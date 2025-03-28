@@ -2,14 +2,14 @@
   "traderJoes": [
     {
       "name": "購物袋-起司冒險",
-      "price": 4.389,
+      "price": 3.99,
       "salePrice": 210,
       "tax": 1.1,
       "image": "https://raw.githubusercontent.com/WinnieLee0923/product-list/refs/heads/main/Images/image21.jpg"
     },
     {
       "name": "超好吃巧克力捲心酥",
-      "price": 2.29,
+      "price": 2.49,
       "salePrice": 130,
       "tax": 1.0,
       "image": "https://raw.githubusercontent.com/WinnieLee0923/product-list/refs/heads/main/Images/image1.jpg"
